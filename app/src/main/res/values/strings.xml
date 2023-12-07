@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Booking</string>
+    <string name="all">ALL</string>
+    <string name="action">Action</string>
+    <string name="sci_fi">Sci-Fi</string>
+    <string name="comedy">Comedy</string>
+    <string name="drama">Drama</string>
+    <string name="time">16:00 (2h16mn)</string>
+    <string name="saw_x">SAW X</string>
+    <string name="joker">JOKER</string>
+    <string name="archer">ARCHER</string>
+    <string name="elemental">ELEMENTAL</string>
+    <string name="oppenheimer">OPPENHEIMER</string>
+    <string name="lordofwar">LORD OF WAR</string>
+    <string name="beauty">BEAUTY</string>
+    <string name="grinch">GRINCH</string>
+    <string name="playerone">PLAYER ONE</string>
+    <string name="kingkong">KING KONG</string>
+    <string name="ching">CHINOY</string>
+    <string name="barbie">BARBIE</string>
+
+</resources>
