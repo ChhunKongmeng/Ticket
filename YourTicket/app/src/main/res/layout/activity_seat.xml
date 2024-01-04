@@ -417,7 +417,6 @@
                 android:textColor="@color/black"
                 android:layout_marginStart="5dp"
                 android:textStyle="bold"
-                android:drawableTint="#00FF0A"
                 android:drawableRight="@drawable/baseline_chair_24"
                 />
 
@@ -739,9 +738,10 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/book"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Book Now"
+                android:text="@string/book"
                 android:backgroundTint="@color/black"/>
 
         </LinearLayout>

@@ -2,8 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".Invoice">
+    xmlns:tools="http://schemas.android.com/tools">
 
 
 
@@ -15,76 +14,6 @@
         tools:context=".MainActivity"
         >
         <!-- top head bar -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:ignore="UselessParent">
-
-            <Button
-                android:id="@+id/all_button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:text="@string/all"
-                android:textSize="12sp"
-                android:layout_weight="1"
-                android:textColor="@color/black"
-                android:background="@color/white"
-                style="?android:attr/buttonBarButtonStyle"
-                tools:ignore="VisualLintButtonSize" />
-
-            <Button
-                android:id="@+id/action_button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:text="@string/action"
-                android:textSize="11sp"
-                android:layout_weight="1"
-                android:textColor="@color/black"
-                android:background="@color/white"
-                style="?android:attr/buttonBarButtonStyle"
-                tools:ignore="VisualLintButtonSize,VisualLintBounds" />
-
-            <Button
-                android:id="@+id/scifi_button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:text="@string/sci_fi"
-                android:textSize="11sp"
-                android:layout_weight="1"
-                android:textColor="@color/black"
-                android:background="@color/white"
-                style="?android:attr/buttonBarButtonStyle"
-                tools:ignore="VisualLintButtonSize,VisualLintBounds" />
-
-            <Button
-                android:id="@+id/comedy_button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:text="@string/comedy"
-                android:textSize="11sp"
-                android:layout_weight="1"
-                android:textColor="@color/black"
-                android:background="@color/white"
-                style="?android:attr/buttonBarButtonStyle"
-                tools:ignore="VisualLintButtonSize,VisualLintBounds" />
-
-            <Button
-                android:id="@+id/drama_button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:text="@string/drama"
-                android:textSize="11sp"
-                android:layout_weight="1"
-                android:textColor="@color/black"
-                android:background="@color/white"
-                style="?android:attr/buttonBarButtonStyle"
-                tools:ignore="VisualLintButtonSize,VisualLintBounds" />
-        </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"

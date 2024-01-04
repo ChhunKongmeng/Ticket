@@ -78,5 +78,5 @@
     <string name="country1">Country :-</string>
     <string name="email_id1">Email Id :-</string>
     <string name="username1">UserName :-</string>
-
+    <string name="book">Book Now</string>
 </resources>
