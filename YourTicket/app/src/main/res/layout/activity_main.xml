@@ -1,47 +1,1054 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/starting_pic"
-    tools:context=".MainActivity">
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
 
-
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+    <!-- top head bar -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-medium"
-            android:text="Ticket"
-            android:textColor="@color/white"
-            android:layout_gravity="center"
-            android:paddingBottom="50dp"
-            android:textSize="60sp" />
-
-        <TextView
-            android:layout_width="232dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:fontFamily="sans-serif-medium"
-            android:paddingLeft="30dp"
-            android:text="Easy book and complete Event ticket !!"
-            android:textColor="@color/white"
-            android:textSize="30sp" />
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
 
         <Button
+            android:id="@+id/all_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:layout_marginTop="80dp"
-            android:backgroundTint="@color/yellow"
-            android:hint="Get Start"
-            android:textColorHint="@color/black"
-            android:textStyle="bold" />
+            android:textAlignment="center"
+            android:text="@string/all"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            style="?android:attr/buttonBarButtonStyle"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/action_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/action"
+            android:textSize="11sp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            style="?android:attr/buttonBarButtonStyle"
+            tools:ignore="VisualLintButtonSize,VisualLintBounds" />
+
+        <Button
+            android:id="@+id/scifi_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/sci_fi"
+            android:textSize="11sp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            style="?android:attr/buttonBarButtonStyle"
+            tools:ignore="VisualLintButtonSize,VisualLintBounds" />
+
+        <Button
+            android:id="@+id/comedy_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/comedy"
+            android:textSize="11sp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            style="?android:attr/buttonBarButtonStyle"
+            tools:ignore="VisualLintButtonSize,VisualLintBounds" />
+
+        <Button
+            android:id="@+id/drama_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/drama"
+            android:textSize="11sp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            style="?android:attr/buttonBarButtonStyle"
+            tools:ignore="VisualLintButtonSize,VisualLintBounds" />
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- vertical all -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- horizontal each Line 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <!-- 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                tools:ignore="TextSizeCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="120dp"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:contentDescription="@string/saw_x"
+                        android:paddingTop="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/saw"
+                        tools:ignore="DuplicateSpeakableTextCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/saw_x"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/time"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <!-- end col 1 card -->
+            </androidx.cardview.widget.CardView>
+            <!-- 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                tools:ignore="TextSizeCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/image2Button"
+                        android:layout_width="120dp"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:paddingTop="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/joker"
+                        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/joker"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/time"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <!-- end col 2 card -->
+            </androidx.cardview.widget.CardView>
+            <!-- 3 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                tools:ignore="TextSizeCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/image3Button"
+                        android:layout_width="120dp"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:contentDescription="TODO"
+                        android:paddingTop="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/archer"
+                        tools:ignore="ContentDescription,HardcodedText,SpeakableTextPresentCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/archer"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/time"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <!-- end col 3 card -->
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- hori end each Line 1 -->
+        </LinearLayout>
+
+        <!-- hori each Line 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-15sp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <!-- 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                tools:ignore="TextSizeCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/image4Button"
+                        android:layout_width="120dp"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:contentDescription="@string/elemental"
+                        android:paddingTop="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/elemental"
+                        tools:ignore="DuplicateSpeakableTextCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/elemental"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/time"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <!-- end col 1 card -->
+            </androidx.cardview.widget.CardView>
+            <!-- 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                tools:ignore="TextSizeCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/image5Button"
+                        android:layout_width="120dp"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:paddingTop="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/oppenheimer"
+                        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oppenheimer"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/time"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <!-- end col 2 card -->
+            </androidx.cardview.widget.CardView>
+            <!-- 3 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                tools:ignore="TextSizeCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/image6Button"
+                        android:layout_width="120dp"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:contentDescription="TODO"
+                        android:paddingTop="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/lordofwar"
+                        tools:ignore="ContentDescription,HardcodedText,SpeakableTextPresentCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lordofwar"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/time"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <!-- end col 3 card -->
+            </androidx.cardview.widget.CardView>
+
+            <!-- hori end each Line 2 -->
+        </LinearLayout>
+
+        <!-- hori each Line 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-15sp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <!-- 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                tools:ignore="TextSizeCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/image7Button"
+                        android:layout_width="120dp"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:contentDescription="@string/elemental"
+                        android:paddingTop="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/beautyandbeast"
+                        tools:ignore="DuplicateSpeakableTextCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/beauty"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/time"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <!-- end col 1 card -->
+            </androidx.cardview.widget.CardView>
+            <!-- 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                tools:ignore="TextSizeCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/image8Button"
+                        android:layout_width="120dp"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:paddingTop="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/grinch"
+                        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/grinch"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/time"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <!-- end col 2 card -->
+            </androidx.cardview.widget.CardView>
+            <!-- 3 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                tools:ignore="TextSizeCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/image9Button"
+                        android:layout_width="120dp"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:contentDescription="TODO"
+                        android:paddingTop="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/readyplayerone"
+                        tools:ignore="ContentDescription,HardcodedText,SpeakableTextPresentCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/playerone"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/time"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <!-- end col 3 card -->
+            </androidx.cardview.widget.CardView>
+
+            <!-- hori end each Line 3 -->
+        </LinearLayout>
+
+        <!-- hori each Line 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-15sp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <!-- 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                tools:ignore="TextSizeCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/image10Button"
+                        android:layout_width="120dp"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:contentDescription="@string/elemental"
+                        android:paddingTop="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/kingkong"
+                        tools:ignore="DuplicateSpeakableTextCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kingkong"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/time"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <!-- end col 1 card -->
+            </androidx.cardview.widget.CardView>
+            <!-- 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                tools:ignore="TextSizeCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/image11Button"
+                        android:layout_width="120dp"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:paddingTop="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/chinoy"
+                        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ching"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/time"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <!-- end col 2 card -->
+            </androidx.cardview.widget.CardView>
+            <!-- 3 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                tools:ignore="TextSizeCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/image12Button"
+                        android:layout_width="120dp"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:contentDescription="TODO"
+                        android:paddingTop="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/barbie"
+                        tools:ignore="ContentDescription,HardcodedText,SpeakableTextPresentCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/barbie"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/time"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <!-- end col 3 card -->
+            </androidx.cardview.widget.CardView>
+
+            <!-- hori end each Line 4 -->
+        </LinearLayout>
+
+        <!-- hori each Line 5 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-15sp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <!-- 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                tools:ignore="TextSizeCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/image13Button"
+                        android:layout_width="120dp"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:contentDescription="@string/elemental"
+                        android:paddingTop="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/saw"
+                        tools:ignore="DuplicateSpeakableTextCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/beauty"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/time"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <!-- end col 1 card -->
+            </androidx.cardview.widget.CardView>
+            <!-- 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                tools:ignore="TextSizeCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/image14Button"
+                        android:layout_width="120dp"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:paddingTop="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/joker"
+                        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/grinch"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/time"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <!-- end col 2 card -->
+            </androidx.cardview.widget.CardView>
+            <!-- 3 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                tools:ignore="TextSizeCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/image15Button"
+                        android:layout_width="120dp"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:contentDescription="TODO"
+                        android:paddingTop="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/archer"
+                        tools:ignore="ContentDescription,HardcodedText,SpeakableTextPresentCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/playerone"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/time"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <!-- end col 3 card -->
+            </androidx.cardview.widget.CardView>
+
+            <!-- hori end each Line 5 -->
+        </LinearLayout>
+
+        <!-- hori each Line 5 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-15sp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <!-- 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                tools:ignore="TextSizeCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/image16Button"
+                        android:layout_width="120dp"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:contentDescription="@string/elemental"
+                        android:paddingTop="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/elemental"
+                        tools:ignore="DuplicateSpeakableTextCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/beauty"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/time"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <!-- end col 1 card -->
+            </androidx.cardview.widget.CardView>
+            <!-- 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                tools:ignore="TextSizeCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/image17Button"
+                        android:layout_width="120dp"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:paddingTop="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/oppenheimer"
+                        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/grinch"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/time"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <!-- end col 2 card -->
+            </androidx.cardview.widget.CardView>
+            <!-- 3 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                tools:ignore="TextSizeCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/image18Button"
+                        android:layout_width="120dp"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:contentDescription="TODO"
+                        android:paddingTop="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/lordofwar"
+                        tools:ignore="ContentDescription,HardcodedText,SpeakableTextPresentCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/playerone"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/time"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <!-- end col 3 card -->
+            </androidx.cardview.widget.CardView>
+
+            <!-- hori end each Line 5 -->
+        </LinearLayout>
+
+        <!-- hori each Line 5 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-15sp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <!-- 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                tools:ignore="TextSizeCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/image19Button"
+                        android:layout_width="120dp"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:contentDescription="@string/elemental"
+                        android:paddingTop="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/beautyandbeast"
+                        tools:ignore="DuplicateSpeakableTextCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/beauty"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/time"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <!-- end col 1 card -->
+            </androidx.cardview.widget.CardView>
+            <!-- 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                tools:ignore="TextSizeCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/image20Button"
+                        android:layout_width="120dp"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:paddingTop="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/grinch"
+                        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/grinch"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/time"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <!-- end col 2 card -->
+            </androidx.cardview.widget.CardView>
+            <!-- 3 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                tools:ignore="TextSizeCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageButton
+                        android:id="@+id/image21Button"
+                        android:layout_width="120dp"
+                        android:layout_height="170dp"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:contentDescription="TODO"
+                        android:paddingTop="0dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/readyplayerone"
+                        tools:ignore="ContentDescription,HardcodedText,SpeakableTextPresentCheck" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/playerone"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/time"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <!-- end col 3 card -->
+            </androidx.cardview.widget.CardView>
+
+            <!-- hori end each Line 5 -->
+        </LinearLayout>
+        <!-- verti all end layout -->
+    </LinearLayout>
+
+    <!-- end linearlayout -->
+</LinearLayout>
+</ScrollView>
