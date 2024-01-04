@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Invoice">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        >
+        <!-- top head bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/all_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/all"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                style="?android:attr/buttonBarButtonStyle"
+                tools:ignore="VisualLintButtonSize" />
+
+            <Button
+                android:id="@+id/action_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/action"
+                android:textSize="11sp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                style="?android:attr/buttonBarButtonStyle"
+                tools:ignore="VisualLintButtonSize,VisualLintBounds" />
+
+            <Button
+                android:id="@+id/scifi_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/sci_fi"
+                android:textSize="11sp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                style="?android:attr/buttonBarButtonStyle"
+                tools:ignore="VisualLintButtonSize,VisualLintBounds" />
+
+            <Button
+                android:id="@+id/comedy_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/comedy"
+                android:textSize="11sp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                style="?android:attr/buttonBarButtonStyle"
+                tools:ignore="VisualLintButtonSize,VisualLintBounds" />
+
+            <Button
+                android:id="@+id/drama_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/drama"
+                android:textSize="11sp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                style="?android:attr/buttonBarButtonStyle"
+                tools:ignore="VisualLintButtonSize,VisualLintBounds" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20sp">
+
+        <ImageButton
+            android:id="@+id/back_invoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@drawable/arrow_back"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/checkout"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginStart="10sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="160sp"
+                    android:layout_height="160sp"
+                    android:src="@drawable/saw"
+                    android:layout_marginLeft="20sp"
+                    android:layout_weight="1">
+                </ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_margin="20sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/saw_x"
+                        android:textStyle="bold"
+                        android:textSize="17sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/us_2d"
+                        android:layout_marginTop="10sp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fri_03_16_00"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/phnom_penh_cambodia"
+                        />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/code"
+                        android:layout_marginTop="5sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="150sp"
+                        android:layout_height="150sp"
+                        android:src="@drawable/qr"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_2_ticket_s"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:textColor="@color/gold"
+                            android:layout_marginTop="5sp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hall_screen_3"
+                            android:gravity="center"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="5sp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/seats_f5_f6"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="10sp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/booking_id_kw67yh"
+                            android:gravity="center"
+                            android:textSize="10sp"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="15sp"
+                            tools:ignore="SmallSp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tap_to_see_more"
+                            android:gravity="center"
+                            android:textSize="10sp"
+                            android:layout_marginTop="15sp"
+                            tools:ignore="SmallSp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/a_confirmation_is_call_by_sms_email_within_15mn_of_booking"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    tools:ignore="SmallSp">
+                </TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="20sp">
+                    <ImageButton
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/movies"
+                        android:background="@color/white"
+                        android:textColor="@color/black"
+                        android:layout_weight="1">
+                    </ImageButton>
+                    <ImageButton
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/call"
+                        android:background="@color/white"
+                        android:textColor="@color/black"
+                        android:layout_weight="1">
+                    </ImageButton>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginTop="-20sp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cancle Booking"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cancle Booking"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>
