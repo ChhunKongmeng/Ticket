@@ -22,10 +22,10 @@
     <string name="us_2d">US , 2D</string>
     <string name="fri_03_16_00">Fri, 03 | 16:00</string>
     <string name="phnom_penh_cambodia">Phnom Penh, Cambodia</string>
-    <string name="_2_ticket_s">2 Ticket(s)</string>
+    <string name="_2_ticket_s">4 Ticket(s)</string>
     <string name="hall_screen_3">HAll SCREEN 3</string>
     <string name="booking_id_kw67yh">Booking ID: KW67YH</string>
-    <string name="seats_f5_f6">seats (F5,F6)</string>
+    <string name="seats_f5_f6">seats (A2,B2,C3,D3)</string>
     <string name="a_confirmation_is_call_by_sms_email_within_15mn_of_booking">A confirmation is call by SMS/email within 15mn of booking.</string>
     <string name="tap_to_see_more">Tap to see more</string>
 

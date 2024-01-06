@@ -12,7 +12,7 @@
     android:layout_height="wrap_content"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".MainActivity"
+    tools:context=".view.activity.MainActivity"
     >
     <!-- top head bar -->
     <LinearLayout

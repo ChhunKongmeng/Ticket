@@ -247,6 +247,7 @@
                 android:drawableRight="@drawable/baseline_chair_24"
                />
             <TextView
+                android:id="@+id/seat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
@@ -329,6 +330,7 @@
                 android:drawableRight="@drawable/baseline_chair_24"
                 />
             <TextView
+                android:id="@+id/seat2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
@@ -421,6 +423,7 @@
                 />
 
             <TextView
+                android:id="@+id/seat1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
@@ -505,6 +508,7 @@
                 />
 
             <TextView
+                android:id="@+id/seat3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"

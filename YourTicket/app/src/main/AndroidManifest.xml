@@ -12,7 +12,7 @@
         android:theme="@style/Theme.Booking"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".view.activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,15 +22,15 @@
         </activity>
 
         <activity
-            android:name=".SeatActivity">
+            android:name=".view.activity.SeatActivity">
         </activity>
 
         <activity
-            android:name=".ConfirmBooking">
+            android:name=".view.activity.ConfirmBooking">
         </activity>
 
         <activity
-            android:name=".Invoice">
+            android:name=".view.activity.Invoice">
         </activity>
     </application>
 
